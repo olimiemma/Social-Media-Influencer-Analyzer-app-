@@ -1,0 +1,15 @@
+def calculate_reach(impressions, followers):
+  """Calculates the reach of a post or profile."""
+
+  reach = impressions / followers * 100
+
+  return reach
+
+
+
+
+"""
+Simplier
+def calculate_reach(impressions, total_followers):
+    reach = impressions / total_followers
+    return reach * 100
