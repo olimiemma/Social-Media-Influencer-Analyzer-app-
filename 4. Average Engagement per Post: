@@ -1,0 +1,7 @@
+def calculate_average_engagement_per_post(data):
+  """Calculates the average engagement per post."""
+
+  total_engagement = data['likes'].sum() + data['comments'].sum()
+  average_engagement = total_engagement / len(data)
+
+  return average_engagement
