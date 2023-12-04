@@ -1,0 +1,18 @@
+import pandas as pd
+
+def calculate_follower_growth_rate(current_followers, past_followers, time_delta):
+  """Calculates the follower growth rate over a specified time period."""
+
+  follower_growth = current_followers - past_followers
+  growth_rate = follower_growth / past_followers * 100 * (1 / time_delta)
+
+  return growth_rate
+
+
+"""
+
+Simplier 
+def calculate_follower_growth_rate(followers_current, followers_previous, time_interval):
+    follower_growth_rate = (followers_current - followers_previous) / followers_previous / time_interval
+    return follower_growth_rate * 100
+"""
