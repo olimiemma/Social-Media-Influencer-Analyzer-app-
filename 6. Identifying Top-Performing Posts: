@@ -1,0 +1,6 @@
+def identify_top_performing_posts(data, metric='engagement_rate', top_n=5):
+  """Identifies the top-performing posts based on a given metric."""
+
+  top_posts = data.sort_values(by=metric, ascending=False).head(top_n)
+
+  return top_posts
