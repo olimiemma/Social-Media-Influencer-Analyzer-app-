@@ -1,0 +1,3 @@
+def calculate_influence_score(engagement_rate, follower_growth_rate, reach):
+    influence_score = 0.3 * engagement_rate + 0.4 * follower_growth_rate + 0.3 * reach
+    return influence_score
