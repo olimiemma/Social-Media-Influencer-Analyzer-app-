@@ -1,0 +1,22 @@
+
+import pandas as pd
+
+def calculate_engagement_rate(data):
+  """Calculates the average engagement rate for a set of posts."""
+
+  total_likes = data['likes'].sum()
+  total_comments = data['comments'].sum()
+  total_impressions = data['impressions'].sum()
+
+  engagement_rate = (total_likes + total_comments) / total_impressions * 100
+
+  return engagement_rate
+
+"""
+simplier
+
+def calculate_engagement_rate(likes, comments, shares, total_followers):
+    engagement_rate = (likes + comments + shares) / total_followers
+    return engagement_rate * 100
+
+"""
